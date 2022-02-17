@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;300&display=swap');
+
+// rwd
+$breakpoints: (
+    sm: 414px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px
+);
+
+@mixin rwd($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: {
+        image: url(/img/summer-beach.jpg);
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font: {
+        size: 2.5rem;
+        weight: 500;
+    }
+    margin-top: 100px;
+
+    @include rwd(sm) {
+        font-size: 3rem;
+    }
+
+    @include rwd(md) {
+        font-size: 3.5rem;
+    }
+
+    @include rwd(lg) {
+        font-size: 4rem;
+    }
+
+    @include rwd(xl) {
+        font-size: 4.5rem;
+    }
+}
+
+h2 {
+    font: {
+        size: 0.6rem;
+        weight: 300;
+    }
+    margin-top: 30px;
+
+    @include rwd(sm) {
+        font-size: 0.8rem;
+    }
+
+    @include rwd(md) {
+        font-size: 1rem;
+    }
+
+    @include rwd(lg) {
+        font-size: 1.2rem;
+    }
+
+    @include rwd(xl) {
+        font-size: 1.4rem;
+    }
+}
+
+#cd-timer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    .cd-timer-wrap{
+        min-width: 40%;
+        text-align: center;
+        margin: 0 10px 20px;
+        p {
+            font: {
+                size: 3.5rem;
+                weight: 700;
+            }
+
+            @include rwd(sm) {
+                font-size: 4rem;
+            }
+
+            @include rwd(md) {
+                font-size: 4.5rem;
+            }
+        
+            @include rwd(lg) {
+                font-size: 5rem;
+            }
+        
+            @include rwd(xl) {
+                font-size: 5.5rem;
+            }
+        }
+        span {
+            font: {
+                size: 0.8rem;
+                weight: 300;
+            }
+
+            @include rwd(sm) {
+                font-size: 1rem;
+            }
+
+            @include rwd(md) {
+                font-size: 1.2rem;
+            }
+        
+            @include rwd(lg) {
+                font-size: 1.5rem;
+            }
+        
+            @include rwd(xl) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @include rwd(md) {
+        flex-wrap: nowrap;
+    }
+}
