@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;300&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,54 +41,12 @@ h1 {
   letter-spacing: 1rem;
 }
 
-/* @media screen and (min-width: 414px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  h1 {
-    font-size: 4.5rem;
-  }
-} */
-
 h2 {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   font-weight: 300;
   letter-spacing: 0.05rem;
   margin-top: 6px;
 }
-
-/* @media screen and (min-width: 414px) {
-  h2 {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  h2 {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  h2 {
-    font-size: 1.4rem;
-  }
-} */
 
 #cd-timer-container {
   display: flex;
@@ -107,59 +66,11 @@ h2 {
   font-weight: 700;
 }
 
-/* @media screen and (min-width: 414px) {
-  #cd-timer-container .cd-timer-wrap p {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #cd-timer-container .cd-timer-wrap p {
-    font-size: 4.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #cd-timer-container .cd-timer-wrap p {
-    font-size: 5rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  #cd-timer-container .cd-timer-wrap p {
-    font-size: 5.5rem;
-  }
-} */
-
 #cd-timer-container .cd-timer-wrap span {
   font-size: clamp(0.8rem, 2vw, 1.4rem);
   font-weight: 300;
 }
 
-/* @media screen and (min-width: 414px) {
-  #cd-timer-container .cd-timer-wrap span {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #cd-timer-container .cd-timer-wrap span {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #cd-timer-container .cd-timer-wrap span {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  #cd-timer-container .cd-timer-wrap span {
-    font-size: 1.8rem;
-  }
-}
-*/
 @media screen and (min-width: 768px) {
   #cd-timer-container {
     flex-wrap: nowrap;
